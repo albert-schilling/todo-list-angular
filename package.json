@@ -1,0 +1,27 @@
+{
+  "name": "angular-task-list",
+  "version": "1.0.0",
+  "description": "Built according to the tutorial by [Unleashed Design](https://www.youtube.com/watch?v=yS6QKQkfw_w&list=PLwG0hu96Rc0oK1MJ3zfFRPqpmMJJ7Bn_g)",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd ToDoList && npm start",
+    "install:server": "cd server && npm i",
+    "install:client": "cd ToDoList && npm i",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run client\"",
+    "install:all": "concurrently \"npm install\" \"npm run install:server\" \"npm run install:client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albert-schilling/todo-list-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albert-schilling/todo-list-angular/issues"
+  },
+  "homepage": "https://github.com/albert-schilling/todo-list-angular#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
