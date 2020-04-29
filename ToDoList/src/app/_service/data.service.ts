@@ -11,7 +11,7 @@ import { ToDo } from '../_interface/todo'
   providedIn: 'root',
 })
 export class DataService {
-  private serverUrl = 'http://localhost:3000'
+  private serverUrl = 'http://localhost:3030'
   constructor(private _http: HttpClient) {}
 
   // GET
